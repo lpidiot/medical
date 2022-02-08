@@ -1,0 +1,57 @@
+## 服务端口
+server:
+  port: 8202
+# 服务名
+spring:
+  application:
+    name: service-cmn
+  profiles:
+    active: dev
+  # mysql数据库连接
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yygh_cmn?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  #返回json的全局时间格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+#  # nacos服务地址
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#    #设置sentinel地址
+#    sentinel:
+#      transport:
+#        dashboard: http://127.0.0.1:8858
+#  #mongodb地址
+#  data:
+#    mongodb:
+#      host: 127.0.0.1
+#      port: 27017
+#      database: yygh_hosp
+#  #rabbitmq地址
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: root
+#    password: root
+#
+##配置mapper xml文件的路径
+mybatis-plus:
+  mapper-locations: classpath:com/airwaves/medical/cmn/mapper/xml/*.xml
+
+##开启sentinel
+#feign:
+#  sentinel:
+#    enabled: true
+logging:
+  file:
+    name: cmn-sever.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10KB
+      file-name-pattern: cmn-sever-%d{yyyy-MM-dd}-%i.log

@@ -1,0 +1,314 @@
+2022-02-08 19:58:46.755  INFO 21582 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 19:58:47.365  INFO 21582 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 19:58:47.367  INFO 21582 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 19:58:47.391  INFO 21582 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2022-02-08 19:58:47.630  INFO 21582 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b36517e1-b750-3b52-a417-cd83cc901950
+2022-02-08 19:58:47.952  INFO 21582 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 19:58:48.028  INFO 21582 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 19:58:48.036  INFO 21582 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 19:58:48.477  INFO 21582 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 19:58:48.486  INFO 21582 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 19:58:48.486  INFO 21582 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 19:58:48.566  INFO 21582 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 19:58:48.567  INFO 21582 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1801 ms
+2022-02-08 19:58:48.989  WARN 21582 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 19:58:48.989  INFO 21582 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 19:58:48.994  WARN 21582 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 19:58:48.994  INFO 21582 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 19:58:49.192  INFO 21582 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 19:58:49.240  INFO 21582 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 19:58:49.359  INFO 21582 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 19:58:49.907  INFO 21582 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 19:58:50.141  INFO 21582 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 19:58:50.239  INFO 21582 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 19:58:50.247  INFO 21582 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 4.66 seconds (JVM running for 5.494)
+2022-02-08 19:59:04.814  INFO 21582 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 19:59:04.814  INFO 21582 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 19:59:04.823  INFO 21582 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-02-08 19:59:13.945  INFO 21582 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 19:59:13.952  INFO 21582 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 19:59:13.956  INFO 21582 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:01:23.718  INFO 22086 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 20:01:25.208  INFO 22086 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 20:01:25.212  INFO 22086 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 20:01:25.263  INFO 22086 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2022-02-08 20:01:25.690  INFO 22086 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b36517e1-b750-3b52-a417-cd83cc901950
+2022-02-08 20:01:26.278  INFO 22086 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:01:26.347  INFO 22086 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:01:26.356  INFO 22086 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:01:27.134  INFO 22086 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 20:01:27.145  INFO 22086 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 20:01:27.145  INFO 22086 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 20:01:27.229  INFO 22086 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 20:01:27.230  INFO 22086 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3466 ms
+2022-02-08 20:01:27.782  WARN 22086 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:01:27.783  INFO 22086 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:01:27.793  WARN 22086 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:01:27.793  INFO 22086 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:01:28.151  INFO 22086 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:01:28.219  INFO 22086 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 20:01:28.399  INFO 22086 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 20:01:28.991  INFO 22086 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 20:01:29.151  INFO 22086 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 20:01:29.217  INFO 22086 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 20:01:29.217  INFO 22086 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 20:01:29.225  INFO 22086 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-02-08 20:01:29.238  INFO 22086 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 20:01:29.241  INFO 22086 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 7.323 seconds (JVM running for 8.275)
+2022-02-08 20:03:35.161  INFO 22086 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 20:03:35.168  INFO 22086 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 20:03:35.169  INFO 22086 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:05:14.745  INFO 22542 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 20:05:15.749  INFO 22542 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 20:05:15.750  INFO 22542 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 20:05:15.775  INFO 22542 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2022-02-08 20:05:16.112  INFO 22542 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff283a46-47f5-3c59-8096-4a48fab30c70
+2022-02-08 20:05:16.491  INFO 22542 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:05:16.562  INFO 22542 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:05:16.570  INFO 22542 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:05:17.111  INFO 22542 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 20:05:17.120  INFO 22542 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 20:05:17.120  INFO 22542 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 20:05:17.194  INFO 22542 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 20:05:17.194  INFO 22542 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2430 ms
+2022-02-08 20:05:17.847  INFO 22542 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 20:05:17.938  INFO 22542 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-08 20:05:17.957  WARN 22542 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:05:17.957  INFO 22542 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:05:17.962  WARN 22542 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:05:17.962  INFO 22542 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:05:18.100  INFO 22542 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:05:18.173  INFO 22542 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 20:05:18.275  INFO 22542 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 20:05:18.882  INFO 22542 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-02-08 20:05:18.898  INFO 22542 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-02-08 20:05:18.929  INFO 22542 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 20:05:19.038  INFO 22542 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 20:05:19.064  INFO 22542 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 20:05:19.133  INFO 22542 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 20:05:19.133  INFO 22542 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 20:05:19.141  INFO 22542 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-02-08 20:05:19.147  INFO 22542 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 20:05:19.150  INFO 22542 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 5.803 seconds (JVM running for 6.539)
+2022-02-08 20:06:15.573  WARN 22542 --- [http-nio-8202-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type Long]
+2022-02-08 20:09:17.672  INFO 22542 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 20:09:17.675  INFO 22542 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 20:09:17.678  INFO 22542 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:09:22.577  INFO 22981 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 20:09:23.478  INFO 22981 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 20:09:23.480  INFO 22981 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 20:09:23.507  INFO 22981 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2022-02-08 20:09:23.798  INFO 22981 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff283a46-47f5-3c59-8096-4a48fab30c70
+2022-02-08 20:09:24.185  INFO 22981 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:09:24.266  INFO 22981 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:09:24.290  INFO 22981 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:09:24.843  INFO 22981 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 20:09:24.853  INFO 22981 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 20:09:24.854  INFO 22981 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 20:09:24.928  INFO 22981 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 20:09:24.929  INFO 22981 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2339 ms
+2022-02-08 20:09:25.571  INFO 22981 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 20:09:25.663  INFO 22981 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-08 20:09:25.688  WARN 22981 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:09:25.688  INFO 22981 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:09:25.697  WARN 22981 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:09:25.697  INFO 22981 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:09:25.821  INFO 22981 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:09:25.881  INFO 22981 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 20:09:25.976  INFO 22981 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 20:09:26.516  INFO 22981 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-02-08 20:09:26.526  INFO 22981 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-02-08 20:09:26.550  INFO 22981 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 20:09:26.641  INFO 22981 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 20:09:26.665  INFO 22981 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 20:09:26.739  INFO 22981 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 20:09:26.742  INFO 22981 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 5.301 seconds (JVM running for 5.961)
+2022-02-08 20:09:28.229  INFO 22981 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 20:09:28.229  INFO 22981 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 20:09:28.236  INFO 22981 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-02-08 20:09:38.078  INFO 22981 --- [http-nio-8202-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-08 20:09:38.225  INFO 22981 --- [http-nio-8202-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-08 20:10:38.954  INFO 22981 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 20:10:38.962  INFO 22981 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 20:10:38.965  INFO 22981 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:10:38.976  INFO 22981 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-08 20:10:39.016  INFO 22981 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-08 20:10:46.697  INFO 23304 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 20:10:47.988  INFO 23304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 20:10:47.990  INFO 23304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 20:10:48.021  INFO 23304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-02-08 20:10:48.437  INFO 23304 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff283a46-47f5-3c59-8096-4a48fab30c70
+2022-02-08 20:10:48.800  INFO 23304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:10:48.887  INFO 23304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:10:48.896  INFO 23304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 20:10:49.456  INFO 23304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 20:10:49.465  INFO 23304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 20:10:49.465  INFO 23304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 20:10:49.540  INFO 23304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 20:10:49.541  INFO 23304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2828 ms
+2022-02-08 20:10:50.342  INFO 23304 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 20:10:50.442  INFO 23304 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-08 20:10:50.465  WARN 23304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:10:50.465  INFO 23304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:10:50.470  WARN 23304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 20:10:50.471  INFO 23304 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 20:10:50.620  INFO 23304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:10:50.699  INFO 23304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 20:10:50.812  INFO 23304 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 20:10:51.427  INFO 23304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-02-08 20:10:51.441  INFO 23304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-02-08 20:10:51.471  INFO 23304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 20:10:51.585  INFO 23304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 20:10:51.613  INFO 23304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 20:10:51.705  INFO 23304 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 20:10:51.708  INFO 23304 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 6.438 seconds (JVM running for 7.428)
+2022-02-08 20:52:46.814  INFO 23304 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 20:52:46.814  INFO 23304 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 20:52:46.827  INFO 23304 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-02-08 20:52:46.999  INFO 23304 --- [http-nio-8202-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-08 20:52:47.342  INFO 23304 --- [http-nio-8202-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-08 20:59:05.763  INFO 23304 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 20:59:05.776  INFO 23304 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 20:59:05.780  INFO 23304 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 20:59:05.789  INFO 23304 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-08 20:59:05.831  INFO 23304 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-08 21:27:58.801  INFO 30212 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 21:27:59.578  INFO 30212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 21:27:59.579  INFO 30212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 21:27:59.599  INFO 30212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-02-08 21:27:59.803  INFO 30212 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff283a46-47f5-3c59-8096-4a48fab30c70
+2022-02-08 21:28:00.071  INFO 30212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 21:28:00.130  INFO 30212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 21:28:00.139  INFO 30212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 21:28:00.586  INFO 30212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 21:28:00.595  INFO 30212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 21:28:00.595  INFO 30212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 21:28:00.674  INFO 30212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 21:28:00.675  INFO 30212 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1862 ms
+2022-02-08 21:28:01.436  INFO 30212 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 21:28:01.520  INFO 30212 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-08 21:28:01.539  WARN 30212 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 21:28:01.539  INFO 30212 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 21:28:01.543  WARN 30212 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 21:28:01.543  INFO 30212 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 21:28:01.677  INFO 30212 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 21:28:01.730  INFO 30212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 21:28:01.844  INFO 30212 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 21:28:02.482  INFO 30212 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-02-08 21:28:02.494  INFO 30212 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-02-08 21:28:02.520  INFO 30212 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 21:28:02.630  INFO 30212 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 21:28:02.660  INFO 30212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 21:28:02.745  INFO 30212 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 21:28:02.747  INFO 30212 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 5.15 seconds (JVM running for 5.905)
+2022-02-08 21:28:08.881  INFO 30212 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 21:28:08.882  INFO 30212 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 21:28:08.892  INFO 30212 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-02-08 21:28:09.003  INFO 30212 --- [http-nio-8202-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-08 21:28:09.285  INFO 30212 --- [http-nio-8202-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-08 21:31:45.017  INFO 30212 --- [Thread-15] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 21:31:45.022  INFO 30212 --- [Thread-15] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 21:31:45.024  INFO 30212 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 21:31:45.031  INFO 30212 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-08 21:31:45.050  INFO 30212 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-08 21:31:45.673  INFO 30212 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 21:31:46.294  INFO 30212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 21:31:46.295  INFO 30212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 21:31:46.298  INFO 30212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2022-02-08 21:31:46.486  INFO 30212 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff283a46-47f5-3c59-8096-4a48fab30c70
+2022-02-08 21:31:46.646  INFO 30212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 21:31:46.692  INFO 30212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 21:31:46.696  INFO 30212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 21:31:46.786  INFO 30212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 21:31:46.787  INFO 30212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 21:31:46.787  INFO 30212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 21:31:46.794  INFO 30212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 21:31:46.794  INFO 30212 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2022-02-08 21:31:47.388  INFO 30212 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 21:31:47.521  INFO 30212 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-08 21:31:47.557  WARN 30212 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 21:31:47.558  INFO 30212 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 21:31:47.651  INFO 30212 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 21:31:47.719  INFO 30212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 21:31:47.818  INFO 30212 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 21:31:48.164  INFO 30212 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-02-08 21:31:48.166  INFO 30212 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-02-08 21:31:48.172  INFO 30212 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 22:09:49.053  INFO 32331 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 22:09:49.964  INFO 32331 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 22:09:49.966  INFO 32331 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 22:09:49.995  INFO 32331 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2022-02-08 22:09:50.229  INFO 32331 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff283a46-47f5-3c59-8096-4a48fab30c70
+2022-02-08 22:09:50.521  INFO 32331 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 22:09:50.587  INFO 32331 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 22:09:50.596  INFO 32331 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 22:09:51.060  INFO 32331 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 22:09:51.070  INFO 32331 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 22:09:51.071  INFO 32331 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 22:09:51.153  INFO 32331 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 22:09:51.154  INFO 32331 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2086 ms
+2022-02-08 22:09:51.878  INFO 32331 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 22:09:51.964  INFO 32331 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-08 22:09:51.984  WARN 32331 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 22:09:51.985  INFO 32331 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 22:09:51.990  WARN 32331 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 22:09:51.990  INFO 32331 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 22:09:52.161  INFO 32331 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 22:09:52.220  INFO 32331 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 22:09:52.344  INFO 32331 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 22:09:53.058  INFO 32331 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-02-08 22:09:53.077  INFO 32331 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-02-08 22:09:53.126  INFO 32331 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 22:09:53.321  INFO 32331 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 22:09:53.356  INFO 32331 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 22:09:53.497  INFO 32331 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 22:09:53.506  INFO 32331 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 5.759 seconds (JVM running for 6.54)
+2022-02-08 22:13:56.029  INFO 32331 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 22:13:56.030  INFO 32331 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 22:13:56.039  INFO 32331 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-02-08 22:13:56.167  INFO 32331 --- [http-nio-8202-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-08 22:13:56.465  INFO 32331 --- [http-nio-8202-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-08 22:26:03.919  INFO 32331 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 22:26:03.926  INFO 32331 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 22:26:03.932  INFO 32331 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 22:26:03.941  INFO 32331 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-08 22:26:03.962  INFO 32331 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-08 22:26:10.860  INFO 34836 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : The following profiles are active: dev
+2022-02-08 22:26:11.725  INFO 34836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-08 22:26:11.727  INFO 34836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-08 22:26:11.749  INFO 34836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2022-02-08 22:26:11.981  INFO 34836 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff283a46-47f5-3c59-8096-4a48fab30c70
+2022-02-08 22:26:12.346  INFO 34836 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 22:26:12.441  INFO 34836 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 22:26:12.451  INFO 34836 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-08 22:26:12.914  INFO 34836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8202 (http)
+2022-02-08 22:26:12.924  INFO 34836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 22:26:12.924  INFO 34836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-02-08 22:26:13.003  INFO 34836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 22:26:13.003  INFO 34836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2131 ms
+2022-02-08 22:26:13.688  INFO 34836 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/*].
+2022-02-08 22:26:13.870  INFO 34836 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-08 22:26:13.911  WARN 34836 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 22:26:13.914  INFO 34836 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 22:26:13.920  WARN 34836 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-08 22:26:13.921  INFO 34836 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-08 22:26:14.066  INFO 34836 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-08 22:26:14.119  INFO 34836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 22:26:14.234  INFO 34836 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-02-08 22:26:14.905  INFO 34836 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-02-08 22:26:14.920  INFO 34836 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-02-08 22:26:14.949  INFO 34836 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 22:26:15.059  INFO 34836 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-02-08 22:26:15.089  INFO 34836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8202 (http) with context path ''
+2022-02-08 22:26:15.256  INFO 34836 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-cmn 192.168.31.219:8202 register finished
+2022-02-08 22:26:15.259  INFO 34836 --- [restartedMain] c.a.medical.cmn.ServiceCmnApplication    : Started ServiceCmnApplication in 5.64 seconds (JVM running for 6.813)
+2022-02-08 22:26:24.963  INFO 34836 --- [http-nio-8202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 22:26:24.964  INFO 34836 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 22:26:24.993  INFO 34836 --- [http-nio-8202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2022-02-08 22:26:25.298  INFO 34836 --- [http-nio-8202-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-08 22:26:25.725  INFO 34836 --- [http-nio-8202-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-08 22:27:01.823  INFO 34836 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-02-08 22:27:01.826  INFO 34836 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-02-08 22:27:01.828  INFO 34836 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-08 22:27:01.831  INFO 34836 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-08 22:27:01.835  INFO 34836 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
